@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Land Details - Georgia Lands</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+   
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Georgia Lands</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section same as homepage -->
+    <div class="hero">
+        Georgia Lands for Sale
+    </div>
+
+    <div class="container">
+        <!-- Back button -->
+        <button onclick="goBack()" class="back-button">← Back to Listings</button>
+
+        <!-- Land Details -->
+        <div id="detailsContent"></div>
+
+        <!-- Gallery Slideshow -->
+        <div class="gallery">
+            <button onclick="prevImage()" class="gallery-btn">←</button>
+            <img id="mainImage" src="" alt="Land Image">
+            <button onclick="nextImage()" class="gallery-btn">→</button>
+        </div>
+
+        <!-- Contact Owner -->
+        <a id="contactOwner" class="contact-button" href="#">Contact Owner</a>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Georgia Lands. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>#
+
+</body>
+
+</html>

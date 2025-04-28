@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.hero {
+    background-image: url('1.jpg');
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.land-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.land-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+    .land-card:hover {
+        transform: scale(1.02);
+    }
+
+.land-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.land-details {
+    padding: 20px;
+}
+
+.gallery {
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+    .gallery img {
+        width: 600px; /* fixed width */
+        height: 400px; /* fixed height */
+        object-fit: cover; /* crop nicely to fit */
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+.gallery-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.back-button {
+    margin: 20px 0;
+    background: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+}
+/* Navigation Bar */
+/* Professional Navbar Fix */
+.navbar {
+    background: #ffffff;
+    padding: 10px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 93%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    flex: 1; /* logo takes left space */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex: 1; /* menu takes right space */
+}
+
+    .nav-menu li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+        .nav-menu li a:hover {
+            color: #3498db;
+        }
+
+
+/* Footer */
+.footer {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 40px;
+}
